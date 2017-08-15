@@ -8,10 +8,17 @@ import { Component, OnInit } from '@angular/core';
 export class DataBindingComponent implements OnInit {
 
   url : string = 'http://loiane.com';
+  nomeDoCurso : string = 'Angular';
+  valorInicial: number = 15;
 
   getValor()
   {
     return 1;
+  }
+
+  onMudouValor(event)
+  {
+    console.log(event);
   }
 
   constructor() { }

@@ -1,4 +1,4 @@
-<section class="property-binding" >
+<section class="input-output-properties" >
   <!--
   <article>
     <h3>Interpolação</h3>
@@ -8,7 +8,7 @@
   </article> 
   -->
 
-    <article>
+    <!-- <article>
       <h3>Class e style Binding</h3>
       <div>
         Selecione uma classe
@@ -24,5 +24,11 @@
         <div class="alert" role="alert" [class.alert-warning]="classe.value == 'alert-warning'">Alerta</div>
         <div class="alert" role="alert" [class.alert-danger]="classe.value == 'alert-danger'">Erro</div>
       </div>
-    </article> 
+    </article>  -->
+
+    <article>
+      <h3>Output/input properties</h3>
+      <app-curso [nome]="nomeDoCurso"></app-curso>
+      <contador [valor]="valorInicial" (mudouValor)="onMudouValor($event)"></contador>
+    </article>
 </section>
